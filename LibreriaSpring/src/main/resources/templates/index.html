@@ -1,0 +1,79 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head>
+        <meta charset="utf-8">
+        <title>Libreria en Java Spring</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="collapse bg-dark" id="navbarHeader">
+                <div class="container">
+
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> -->
+                        <strong>Libreria</strong>
+                    </a>
+
+<!--                    <button type="button" class="btn btn-outline-info">Dar de alta a un Libro</button>
+                    <button type="button" class="btn btn-outline-danger">Dar de baja a un Libro</button>
+                    <button type="button" class="btn btn-outline-info">Dar de alta a un Editorial</button>
+                    <button type="button" class="btn btn-outline-danger">Dar de baja a un Editorial</button>
+                    <button type="button" class="btn btn-outline-info">Dar de alta un Autor</button>
+                    <button type="button" class="btn btn-outline-danger">Dar de baja a un Autor</button>-->
+
+
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">Libreria en Java Spring</h1>
+
+                        <a th:href="@{/libro/form}" class="btn btn-primary my-2" target="_blank">Cargar Libro</a>
+                        <a th:href="@{/editorial/form}" class="btn btn-primary my-2" target="_blank">Cargar Editorial</a>
+                        <a th:href="@{/autor/form}" class="btn btn-primary my-2" target="_blank">Cargar Autor</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="album py-5 bg-light">
+                <div class="container">
+
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                        <a th:href="@{/prestamo/form}" class="btn btn-outline-primary" target="_blank">Cargar Prestamo</a>
+                        <a th:href="@{/cliente/form}" class="btn btn-outline-success" target="_blank">Cargar Cliente</a>
+                       
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="text-muted py-5">
+            <div class="container">
+                <p class="float-end mb-1">
+                    <button type="button" class="btn btn-outline-dark">Subir al inicio de la pagina</button>
+                </p>
+            </div>
+        </footer>
+
+
+
+
+    </body>
+</html>>
